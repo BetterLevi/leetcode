@@ -21,5 +21,6 @@ public class Test {
         //System.out.println(leetCode_28.strStr( "mississippi","pi"));
         LeetCode_198 leetCode_198 = new LeetCode_198();
         System.out.println(leetCode_198.rob(dataA));
+        System.out.println("aaa".trim().length() + "\t" + "aaa".trim().lastIndexOf(" "));
     }
 }
