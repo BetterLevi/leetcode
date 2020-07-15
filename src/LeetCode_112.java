@@ -1,3 +1,8 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
 /**
  * @author Levi
  * @date 2020.7.7
@@ -17,6 +22,11 @@ public class LeetCode_112 {
     }
 
     public static void main(String[] args) {
+        List<Integer> r = new ArrayList<>();
+        r.add(0);
+        Integer[] rr = (Integer[]) r.toArray();
+        Arrays.sort(rr);
+        r.sort(Comparator.comparing(Integer::new));
         TreeNode sev = new TreeNode(7);
         TreeNode two = new TreeNode(2);
         TreeNode ele = new TreeNode(11);
