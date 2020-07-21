@@ -28,4 +28,8 @@ class TreeNode {
     TreeNode(int x) {
         val = x;
     }
+
+    int getVal() {
+        return val;
+    }
 }
