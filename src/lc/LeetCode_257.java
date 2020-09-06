@@ -1,11 +1,7 @@
 package lc;
 
-import com.sun.jmx.snmp.SnmpNull;
-
-import java.util.ArrayDeque;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Queue;
 
 /**
  * 二叉树所有路径
@@ -16,6 +12,9 @@ import java.util.Queue;
 public class LeetCode_257 {
     public List<String> binaryTreePaths(TreeNode root) {
         List<String> res = new ArrayList<>();
+        if(root == null) {
+            return res;
+        }
         StringBuilder builder = new StringBuilder();
         builder.append(root.val);
         backTracking(root, builder, res);
