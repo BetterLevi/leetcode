@@ -1,6 +1,7 @@
 package jianzhi;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -37,5 +38,12 @@ public class LCP_07 {
         for (int nextIndex : list) {
             dfs(nextIndex, steps + 1);
         }
+    }
+
+    public static void main(String[] args) {
+        List<String> ls = new ArrayList<>();
+        ls.sort(Comparator.comparingInt(String::length).reversed());
+        StringBuilder sb = new StringBuilder();
+
     }
 }
